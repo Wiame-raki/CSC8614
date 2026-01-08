@@ -42,7 +42,8 @@ pip install -r requirements.txt
 Le symbole `Ġ` (ou espace dans l'affichage) indique le début d'un mot ou d'un token qui était précédé d'un espace dans le texte original. C'est une convention du tokenizer GPT-2 pour préserver l'information sur les limites des mots. Le premier token d'une phrase n'a pas ce préfixe car rien ne le précède. Cette approche permet au modèle de reconstruire les espaces lors du décodage et de distinguer « word » de « new word ».
 
 **Execution:**
-![hello-world](img\ex1_1.png)
+![hello-world](./img/ex1_1.png)
+
 
 ### 1.2 Token IDs et décodage
 
@@ -127,7 +128,7 @@ Dans un modèle de langage causal comme GPT-2,`n_positions` correspond au nombre
 
 ### 2.2 Visualisation PCA (positions 0-50)
 
-![Positions 0-50 PCA](img\pca50.png)
+![Positions 0-50 PCA](./img/pca50.png)
 
 **Observations:**
 
@@ -144,7 +145,7 @@ La visualisation PCA des positions 0-50 révèle une trajectoire spiralée et os
 
 ### 2.3 Visualisation PCA (positions 0-200)
 
-![Positions 0-200 PCA](img/pca_200.png)
+![Positions 0-200 PCA](./img/pca_200.png)
 
 **Comparaison (0-50) vs (0-200):**
 
