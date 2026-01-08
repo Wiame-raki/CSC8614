@@ -420,7 +420,6 @@ The future of the Internet of Things, and the future of the Internet of Things i
 
 - **Temp 2.0 = Chaotique:** La distribution est "aplatie" (toutes les probabilités se rapprochent). Le modèle choisit quasi-aléatoirement, producint souvent du texte sans sens.
 
-**Conclusion:** Température = contrôle du compromis cohérence vs diversité. 
 
 ### 4.5 Beam Search (num_beams=5)
 
