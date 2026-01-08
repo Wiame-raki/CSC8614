@@ -1,0 +1,28 @@
+# Environnement virtuel
+venv/
+env/
+ENV/
+.venv
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Fichiers volumineux (modèles, caches)
+.cache/
+*.pth
+*.pt
+*.bin
+models/
+
