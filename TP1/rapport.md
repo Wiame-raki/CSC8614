@@ -145,7 +145,7 @@ La visualisation PCA des positions 0-50 révèle une trajectoire spiralée et os
 
 ### 2.3 Visualisation PCA (positions 0-200)
 
-![Positions 0-200 PCA](./img/pca_200.png)
+![Positions 0-200 PCA](./img/pca200.png)
 
 **Comparaison (0-50) vs (0-200):**
 
