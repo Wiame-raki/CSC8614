@@ -25,4 +25,12 @@ __pycache__/
 *.pt
 *.bin
 models/
+gpt2_weights/
+
+# Dataset 
+sms_spam_collection.zip
+sms_spam_collection/
+
+
+
 
