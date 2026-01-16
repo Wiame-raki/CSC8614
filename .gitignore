@@ -30,6 +30,9 @@ gpt2_weights/
 # Dataset 
 sms_spam_collection.zip
 sms_spam_collection/
+chroma_db/
+data/
+
 
 
 
