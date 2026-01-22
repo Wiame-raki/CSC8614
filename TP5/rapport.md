@@ -180,15 +180,6 @@ graph TD
     G --> FNL;
     H --> FNL;
     FNL --> Z[END];
-
-    %% Styles pour une meilleure lisibilité
-    style A fill:#f9f,stroke:#333,stroke-width:2px;
-    style B fill:#bbf,stroke:#333,stroke-width:2px;
-    style C fill:#ccf,stroke:#333,stroke-width:2px;
-    style D fill:#ddf,stroke:#333,stroke-width:2px;
-    style E fill:#fcf,stroke:#333,stroke-width:2px;
-    style FNL fill:#afa,stroke:#333,stroke-width:2px;
-    style Z fill:#eee,stroke:#333,stroke-width:2px;
 ```
 
 ## Résultats
