@@ -1,0 +1,20 @@
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:20:32.083639Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E06"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:00.877328Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "security regulations regarding deadline extensions", "rationale": "Email administratif demandant des clarification sur une politique universitaire."}}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:00.885747Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:02.701865Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "10c50590cd4e", "latency_ms": 1815, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:02.702862Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:02.703865Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:39.460562Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:39.462271Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:39.462271Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:39.463443Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:58.929335Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "Sujet: Mise \u00e0 jour urgente de la politique de s\u00e9curit\u00e9 pour le suivi des dates limitatrices."}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:58.930628Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:59.690716Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "1dc271de9317", "latency_ms": 758, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:59.692442Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:21:59.692977Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:22:43.812929Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:22:43.813991Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:22:43.814529Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:22:43.815580Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "d17f54c0-4fc2-4b54-8b08-8635443895ea", "ts": "2026-01-22T20:22:43.816110Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}

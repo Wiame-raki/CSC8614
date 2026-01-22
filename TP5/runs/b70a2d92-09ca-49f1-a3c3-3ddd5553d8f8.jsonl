@@ -1,0 +1,27 @@
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:30:33.369731Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E09"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:09.851609Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "university regulations regarding deadline extensions", "rationale": "Email administratif demandant des clarifications sur une politique universitaire."}}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:09.856735Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:11.045645Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e11760e42048", "latency_ms": 1187, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:11.046646Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:11.047646Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:53.086846Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:53.088024Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:53.088557Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:31:53.089621Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:32:08.557688Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "universit\u00e9 de paris regulations regarding deadline extensions"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:32:08.558789Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:32:09.249198Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "c4322d0bf1cb", "latency_ms": 689, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:32:09.250371Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T10:32:09.251514Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:30:54.979080Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:30:54.981211Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:30:54.982278Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 2}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:30:54.983362Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:31:40.945350Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "universit\u00e9 de paris regulations regarding deadline extensions"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:31:40.946964Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:31:42.098556Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "c4322d0bf1cb", "latency_ms": 1150, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:31:42.100676Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:31:42.101740Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:33:18.908672Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_citations"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:33:18.909759Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "b70a2d92-09ca-49f1-a3c3-3ddd5553d8f8", "ts": "2026-01-22T16:33:18.909759Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 3}}

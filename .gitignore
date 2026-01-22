@@ -32,6 +32,7 @@ sms_spam_collection.zip
 sms_spam_collection/
 chroma_db/
 data/
+!TP5/data/
 
 
 

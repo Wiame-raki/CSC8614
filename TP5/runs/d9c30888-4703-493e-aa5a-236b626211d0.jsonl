@@ -1,0 +1,7 @@
+{"run_id": "d9c30888-4703-493e-aa5a-236b626211d0", "ts": "2026-01-22T09:31:02.432909Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E01"}}
+{"run_id": "d9c30888-4703-493e-aa5a-236b626211d0", "ts": "2026-01-22T09:31:40.065979Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 4, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "", "rationale": "L' administratif et financi\u00e8re de la Direction de l'Enseignement demandent des informations sur les politiques universitaires concernant la mise \u00e0 jour des \u00e9ch\u00e9ances."}}}
+{"run_id": "d9c30888-4703-493e-aa5a-236b626211d0", "ts": "2026-01-22T09:31:40.073656Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "d9c30888-4703-493e-aa5a-236b626211d0", "ts": "2026-01-22T09:31:41.351065Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "26332a07e450", "latency_ms": 1276, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "d9c30888-4703-493e-aa5a-236b626211d0", "ts": "2026-01-22T09:31:41.353038Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "d9c30888-4703-493e-aa5a-236b626211d0", "ts": "2026-01-22T09:31:41.354038Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "d9c30888-4703-493e-aa5a-236b626211d0", "ts": "2026-01-22T09:32:15.457258Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}

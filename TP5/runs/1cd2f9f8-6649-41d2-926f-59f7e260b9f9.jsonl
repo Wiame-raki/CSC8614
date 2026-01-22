@@ -1,0 +1,7 @@
+{"run_id": "1cd2f9f8-6649-41d2-926f-59f7e260b9f9", "ts": "2026-01-22T09:34:47.365610Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E04"}}
+{"run_id": "1cd2f9f8-6649-41d2-926f-59f7e260b9f9", "ts": "2026-01-22T09:35:20.671517Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 1, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "university regulations regarding deadline extensions", "rationale": "Email administratif demandant des clarifications sur une politique universitaire."}}}
+{"run_id": "1cd2f9f8-6649-41d2-926f-59f7e260b9f9", "ts": "2026-01-22T09:35:20.680004Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "1cd2f9f8-6649-41d2-926f-59f7e260b9f9", "ts": "2026-01-22T09:35:21.512585Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e11760e42048", "latency_ms": 832, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "1cd2f9f8-6649-41d2-926f-59f7e260b9f9", "ts": "2026-01-22T09:35:21.513588Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "1cd2f9f8-6649-41d2-926f-59f7e260b9f9", "ts": "2026-01-22T09:35:21.514588Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "1cd2f9f8-6649-41d2-926f-59f7e260b9f9", "ts": "2026-01-22T09:36:02.011575Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}

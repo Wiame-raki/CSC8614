@@ -1,0 +1,20 @@
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:57:55.809697Z", "event": "node_start", "data": {"node": "classify_email", "email_id": "E07"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:18.354723Z", "event": "node_end", "data": {"node": "classify_email", "status": "ok", "decision": {"intent": "reply", "category": "admin", "priority": 3, "risk_level": "low", "needs_retrieval": true, "retrieval_query": "university regulations regarding deadline extensions", "rationale": "Marc Lemoine a sent this email. We need to confirm if it's valid before proceeding with any action."}}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:18.363258Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:19.039036Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e11760e42048", "latency_ms": 675, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:19.041937Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:19.043025Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:55.621677Z", "event": "node_end", "data": {"node": "draft_reply", "status": "safe_mode", "reason": "invalid_json"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:55.623234Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:55.623757Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": false, "last_draft_had_valid_citations": false, "retrieval_attempts": 1}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:58:55.624795Z", "event": "node_start", "data": {"node": "rewrite_query"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:59:18.124385Z", "event": "node_end", "data": {"node": "rewrite_query", "status": "ok", "q2": "university regulations regarding deadline extensions"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:59:18.125495Z", "event": "node_start", "data": {"node": "maybe_retrieve"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:59:18.803405Z", "event": "tool_call", "data": {"tool": "rag_search", "args_hash": "e11760e42048", "latency_ms": 677, "status": "ok", "k": 5, "n_docs": 5}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:59:18.804562Z", "event": "node_end", "data": {"node": "maybe_retrieve", "status": "ok", "n_docs": 5}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T21:59:18.805725Z", "event": "node_start", "data": {"node": "draft_reply"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T22:00:04.803637Z", "event": "node_end", "data": {"node": "draft_reply", "status": "ok", "n_citations": 1}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T22:00:04.805206Z", "event": "node_start", "data": {"node": "check_evidence"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T22:00:04.805745Z", "event": "node_end", "data": {"node": "check_evidence", "status": "ok", "evidence_ok": true, "last_draft_had_valid_citations": true, "retrieval_attempts": 2}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T22:00:04.806809Z", "event": "node_start", "data": {"node": "finalize"}}
+{"run_id": "e7136002-88bd-47c9-b304-3786c7b55059", "ts": "2026-01-22T22:00:04.807350Z", "event": "node_end", "data": {"node": "finalize", "status": "ok", "final_kind": "reply"}}
